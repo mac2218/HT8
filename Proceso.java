@@ -23,8 +23,7 @@ public class Proceso implements Comparable<Proceso> {
         this.ProssName = ProssName;
         this.UserName = UserName;
         this.NiceVal = NiceVal;
-        this.PrioVal = NiceVal + 120; 
-    }
+        this.PrioVal = NiceVal + 120;}
 
         /** @return String */
 
@@ -45,6 +44,31 @@ public class Proceso implements Comparable<Proceso> {
         /** @return int */
 
         public int getNiceVal() {return NiceVal}
+
+        /** @param NiceVal */
+
+        public void setNiceVal(int NiceVal) {this.NiceVal = NiceVal;}
+
+        /**  @return int */
+        
+        public int getPrioVal() {return this.PrioVal;}
+
+        /** @param PrioVal */
+        public void setPrioVal(int PrioVal) {this.PrioVal = PrioVal;}
+
+        /** @param other @return int */
+
+        @Override
+        public int compareTo(Proceso other)
+         {
+            if (this.NiceVal < other.NiceVal) {
+                return -1;
+            } else if (this.NiceVal > other.NiceVal) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
 
         
 }
