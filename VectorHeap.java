@@ -1,7 +1,7 @@
 /*
  * Daniel Machic (22118)
  * HT8
- * Esta interface contiene los métodos para la clase Vector Heap
+ * Esta clase instancia una cola de prioridad utilizando un Vector y Heaps
  */
 
  import java.util.Vector;
